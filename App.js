@@ -4,18 +4,12 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 export default class App extends Component {
   
   render(){
+    const example = "React Native variabel eksempel";
 
     return (
-
+      
       <View style={styles.HelloWorldView}>
-      <StatusBar hidden />
-        <Text style={styles.HelloWorldText}>Første View</Text>
-          <View  style={{backgroundColor:'yellow',margin:5, width: 350, height: 450, alignItems: 'center'}}>
-           <Text style={{fontSize: 30}}>Andet View</Text>
-            <View style={{backgroundColor:'green',margin:5, width: 330, height: 395,alignItems: 'center'}}>
-              <Text style={{fontSize: 30}}>Tredje View</Text>
-            </View>
-          </View>
+        <Text style={styles.HelloWorldText}>{example}</Text>
       </View>
 
     );
@@ -29,9 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   HelloWorldText: {
-    fontSize: 50,
+    fontSize: 25,
     fontWeight: 'bold',
   },
 });
-
-
